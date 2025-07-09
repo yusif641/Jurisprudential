@@ -1,0 +1,26 @@
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1.05151" y="1.11159" width="41" height="41" rx="4.5" stroke="#003057"/>
+<g clip-path="url(#clip0_1_935)">
+<g clip-path="url(#clip1_1_935)">
+<g clip-path="url(#clip2_1_935)">
+<mask id="mask0_1_935" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="11" width="21" height="21">
+<path d="M31.5515 11.6116H11.5515V31.6116H31.5515V11.6116Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1_935)">
+<path d="M28.2188 17.6119C28.2188 17.0596 27.7711 16.6119 27.2188 16.6119H25.0522C24.4999 16.6119 24.0522 16.1642 24.0522 15.6119V14.9452C24.0522 14.0286 23.3022 13.2786 22.3855 13.2786H20.7188C19.8022 13.2786 19.0522 14.0286 19.0522 14.9452V15.6119C19.0522 16.1642 18.6045 16.6119 18.0522 16.6119H15.8855C15.3332 16.6119 14.8855 17.0596 14.8855 17.6119V28.9453C14.8855 29.4975 15.3332 29.9453 15.8855 29.9453H27.2188C27.7711 29.9453 28.2188 29.4975 28.2188 28.9453V17.6119ZM20.7188 15.7786C20.7188 15.3183 21.0919 14.9452 21.5522 14.9452C22.0124 14.9452 22.3855 15.3183 22.3855 15.7786C22.3855 16.2388 22.0124 16.6119 21.5522 16.6119C21.0919 16.6119 20.7188 16.2388 20.7188 15.7786Z" fill="#003057"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_935">
+<rect width="20" height="20" fill="white" transform="translate(11.5515 11.6116)"/>
+</clipPath>
+<clipPath id="clip1_1_935">
+<rect width="20" height="20" fill="white" transform="translate(11.5515 11.6116)"/>
+</clipPath>
+<clipPath id="clip2_1_935">
+<rect width="20" height="20" fill="white" transform="translate(11.5515 11.6116)"/>
+</clipPath>
+</defs>
+</svg>
