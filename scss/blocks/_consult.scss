@@ -1,0 +1,57 @@
+.consult {
+    padding: 60px 0px;
+
+    &__container {
+        border-radius: 20px;
+        background-color: #003057;
+        padding: 40px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 130%;
+        color: #fff;
+        margin-bottom: 17px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        border-radius: 5px;
+        background-color: #887E72;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        color: #fff;
+        padding: 15px;
+    }
+
+    &__line {
+        height: 37px;
+        width: 4px;
+        background-color: #887E72;
+    }
+
+    &__icon {
+        border-radius: 5px;
+        background-color: #887E72;
+        padding: 10px;
+        margin-left: -2px;
+
+        img {
+            margin-top: 6px;
+        }
+    }
+}
