@@ -65,6 +65,13 @@ a {
     box-sizing: content-box;
 }
 
+._container-big {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+
 .wrap {
     overflow: hidden;
     display: flex;
