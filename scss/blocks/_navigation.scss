@@ -1,0 +1,18 @@
+.navigation {
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        color: #03014a;
+    }
+
+    &__current {
+        color: #887e72;
+    }
+}
