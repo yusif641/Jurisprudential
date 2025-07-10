@@ -5,6 +5,12 @@
         display: flex;
         align-items: stretch;
         gap: 24px;
+
+        @media (max-width: 1025px) {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
     }
 
     &__content {
@@ -16,6 +22,16 @@
         padding: 30px;
         background-color: #003057;
         margin-bottom: 80px;
+
+        @media (max-width: 1025px) {
+            margin-bottom: 0px;
+            border-radius: 0px 0px 20px 20px;
+        }
+
+        @media (max-width: 528px) {
+            padding: 20px;
+            text-align: center;
+        }
     }
 
     &__title {
@@ -24,6 +40,10 @@
         line-height: 100%;
         color: #fff;
         margin-bottom: 11px;
+
+        @media (max-width: 528px) {
+            font-size: 24px;
+        }
     }
 
     &__text {
@@ -32,6 +52,10 @@
         color: #fff;
         max-width: 500px;
         margin-bottom: 45px;
+
+        @media (max-width: 528px) {
+            font-size: 16px;
+        }
     }
 
     &__button {
@@ -48,6 +72,12 @@
         line-height: 100%;
         color: #fff;
         padding: 15px;
+    }
+
+    &__brand img {
+        @media (max-width: 1025px) {
+            width: 100%;
+        }
     }
 
     &__line {
@@ -71,6 +101,25 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
+
+        @media (max-width: 528px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+        }
+    }
+
+    &__brands-mobile {
+        display: none;
+
+        @media (max-width: 1025px) {
+            display: flex;
+        }
     }
 
     &__subtext {
@@ -84,5 +133,11 @@
         display: flex;
         align-items: center;
         gap: 12px;
+    }
+
+    &__image img {
+        @media (max-width: 1025px) {
+            width: 100%;
+        }
     }
 }

@@ -1,6 +1,10 @@
 .tasks {
     padding: 60px 0px;
 
+    @media (max-width: 528px) {
+        padding: 30px 0px;
+    }
+
     &__title {
         font-weight: 600;
         font-size: 44px;
@@ -8,6 +12,11 @@
         text-align: center;
         color: #03014a;
         margin-bottom: 60px;
+
+        @media (max-width: 528px) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
     }
 
     &__content {
@@ -15,6 +24,8 @@
         align-items: center;
         gap: 24px;
         align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__item {
@@ -22,7 +33,7 @@
         border-radius: 15px;
         background-color: #fff;
         padding: 20px;
-        width: 306px;
+        max-width: 286px;
     }
 
     &__number {

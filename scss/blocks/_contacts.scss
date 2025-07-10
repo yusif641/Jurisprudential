@@ -5,6 +5,18 @@
         display: flex;
         align-items: flex-start;
         gap: 24px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            background-color: #003057;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 528px) {
+            padding: 20px;
+        }
     }
 
     &__content {
@@ -13,6 +25,12 @@
         padding: 30px;
         background-color: #003057;
         max-width: 400px;
+
+        @media (max-width: 768px) {
+            padding: 0px;
+            background-color: transparent;
+            max-width: none;
+        }
     }
 
     &__input {
@@ -25,14 +43,14 @@
         color: rgba(255, 255, 255, 0.6);
         width: 100%;
         margin-bottom: 36px;
-        
+
         &::placeholder {
             font-weight: 500;
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
         }
     }
-    
+
     &__textarea {
         margin-bottom: 36px;
         width: 100%;
@@ -43,19 +61,19 @@
         font-weight: 500;
         font-size: 12px;
         color: rgba(255, 255, 255, 0.6);
-        
+
         &::placeholder {
             font-weight: 500;
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
         }
     }
-    
+
     &__form {
         display: flex;
         flex-direction: column;
     }
-    
+
     &__radios {
         margin-bottom: 36px;
         display: flex;
@@ -87,11 +105,22 @@
     padding: 40px;
     background-color: #003057;
 
+    @media (max-width: 768px) {
+        padding: 0px;
+        background-color: transparent;
+        text-align: center;
+    }
+
     &__uptext {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-bottom: 26px;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            margin-bottom: 10px;
+        }
     }
 
     &__uptext-text {
@@ -99,6 +128,10 @@
         font-size: 24px;
         line-height: 267%;
         color: #fff;
+
+        @media (max-width: 528px) {
+            font-size: 18px;
+        }
     }
 
     &__circle {
@@ -122,5 +155,16 @@
         color: #fff;
         margin-bottom: 17px;
         max-width: 783px;
+
+        @media (max-width: 528px) {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 528px) {
+    .contacts__button .button__text {
+        display: inline-block;
+        text-align: center;
     }
 }
