@@ -1,5 +1,8 @@
 .header {
+    position: relative;
+    z-index: 100;
     padding: 10px;
+    background-color: #F7F7F7;
 
     &__container {
         display: flex;
@@ -11,6 +14,22 @@
         display: flex;
         align-items: center;
         gap: 16px;
+    }
+
+    &__nav {
+        @media (max-width: 1025px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        @media (max-width: 1025px) {
+
+            img {
+                max-width: 150px;
+                width: 100%;
+            }
+        }
     }
 
     &__list {
@@ -54,6 +73,10 @@
         display: flex;
         align-items: center;
         gap: 15px;
+
+        @media (max-width: 1025px) {
+            display: none;
+        }
     }
 
     &__insta {
@@ -82,5 +105,186 @@
         line-height: 100%;
         text-align: center;
         color: #fff;
+    }
+}
+
+.info-mobile {
+    display: none;
+
+    @media (max-width: 1025px) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__phone {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #003057;
+        border-radius: 5px;
+        background: #003057;
+    }
+
+    &__burger {
+        display: flex;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #003057;
+        border-radius: 5px;
+    }
+}
+
+.info-mobile__burger.active svg:first-child {
+    display: none;
+}
+
+.info-mobile__burger.active svg:last-child {
+    display: block;
+}
+
+.info-mobile__burger svg:first-child {
+    display: block;
+}
+
+.info-mobile__burger svg:last-child {
+    display: none;
+}
+
+.header-mobile {
+    position: fixed;
+    height: 100vh;
+    background-color: #fff;
+    width: 100%;
+    padding: 0px 30px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s linear;
+    transform: translateY(-120%);
+    justify-content: center;
+    z-index: 98;
+
+    &__list {
+        text-align: center;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__link {
+        color: #03014a;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    &__insta {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 0px;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    &__insta-text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        vertical-align: middle;
+        text-decoration: none;
+        color: #887e72;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        vertical-align: middle;
+        height: 42px;
+        padding: 0 20px;
+        border: 1px solid #003057;
+        background: #003057;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    &__button-link {
+        background: #003057;
+        color: #fff;
+    }
+}
+
+.header-mobile.active {
+    transform: translateY(0);
+    display: flex;
+}
+
+.nav-header {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    z-index: 99;
+    padding-top: 80px;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    overflow-y: auto;
+}
+
+.nav-header.active {
+    display: block;
+}
+
+.nav-header .blocks-service {
+    background-color: #F7F7F7;
+    padding: 0px;
+    padding-left: 60px;
+
+    @media (max-width: 768px) {
+        padding-left: 0;
+    }
+}
+
+.nav-header .services__tabs {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+        display: none;
+    }
+}
+
+.nav-header .services__tab {
+    width: 100%;
+    transform: skew(0, 0) translate(0);
+    white-space: nowrap;
+}
+
+.nav-header .services__tab-content {
+    width: 100%;
+    padding: 0px;
+}
+
+.nav-header .services__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        overflow-y: scroll;
     }
 }
