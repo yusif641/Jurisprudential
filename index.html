@@ -14,9 +14,9 @@
         <header class="header">
             <div class="header__container _container">
                 <div class="header__content">
-                    <div class="header__logo">
-                        <img src="./images/header-logo.png" alt="">
-                    </div>
+                    <a href="./index.html" class="header__logo">
+                        <img src="./images/header-logo.png" alt="Логотип">
+                    </a>
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li>
@@ -27,7 +27,7 @@
                             </li>
                             <li><a href="" class="header__link">Абонентское сопровождение</a></li>
                             <li><a href="" class="header__link">Курсы</a></li>
-                            <li><a href="" class="header__link">Контакты</a></li>
+                            <li><a href="" class="header__link scroll-contacts">Контакты</a></li>
                             <li><a href="" class="header__link">Полезные ресурсы</a></li>
                         </ul>
                     </nav>
@@ -49,7 +49,7 @@
                         <img src="./images/icons/cart.svg" alt="">
                     </div>
                     <div class="header__button">
-                        <a href="" class="header__button-link">Связаться с нами</a>
+                        <a href="" class="header__button-link scroll-contacts">Связаться с нами</a>
                     </div>
                 </div>
                 <div class="header__mobile-info info-mobile">
@@ -83,7 +83,8 @@
                     <li><a href="" class="header-mobile__link link-header" id="us">Услуги</a></li>
                     <li><a href="" class="header-mobile__link link-header" id="about">О нас</a></li>
                     <li><a href="" class="header-mobile__link link-header" id="team">Врачи</a></li>
-                    <li><a href="" class="header-mobile__link link-header" id="contacts">Связаться с нами</a></li>
+                    <li><a href="" class="header-mobile__link link-header scroll-contacts" id="contacts">Связаться с
+                            нами</a></li>
                 </ul>
             </nav>
             <div class="header-mobile__insta">
@@ -92,8 +93,8 @@
                 </div>
                 <div class="header-mobile__insta-text">Instagram</div>
             </div>
-            <div class="header-mobile__button">
-                <a href="" class="header-mobile__button-link">Записаться на прием</a>
+            <div class="header-mobile__button scroll-contacts">
+                <div class="header-mobile__button-link">Записаться на прием</div>
             </div>
         </div>
         <div class="nav-header">
@@ -277,7 +278,7 @@
                                 Оптимизация налогов, защита от проверок,
                                 легализация и работа без рисков
                             </p>
-                            <div class="home__button">
+                            <div class="home__button scroll-contacts">
                                 <div class="home__button-text">Запишитесь на бесплатную первичную консультацию</div>
                                 <div class="home__line"></div>
                                 <div class="home__icon">
@@ -608,7 +609,7 @@
                         бизнеса. Никаких обязательств — только
                         полезная информация
                     </p>
-                    <div class="consult__button button">
+                    <div class="consult__button button scroll-contacts">
                         <div class="button__text">Бесплатная консультация</div>
                         <div class="button__line"></div>
                         <div class="button__icon">
@@ -1071,6 +1072,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/animtions.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/scrollButton.js"></script>
     <script src="./js/tabs.js"></script>
     <script src="./js/menu.js"></script>
 </body>
